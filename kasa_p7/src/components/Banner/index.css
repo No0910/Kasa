@@ -1,0 +1,47 @@
+.Banner_home {
+    display: flex;
+    justify-content: center;
+    margin: 43px 0;
+    position: relative;
+}
+
+.Banner_home_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    max-width: 1240px;
+    border-radius: 25px;
+} 
+
+.Banner_home_div h1 {
+    font-size: clamp(24px, 5vw, 48px);
+    color: white;
+    font-weight: 500;
+    z-index: 3;
+    line-height: 24px;
+    margin: 0 20px;
+}
+
+.Banner_home_div_img {
+    background: url("../../assets/BannerHomeDesktop.png");
+    background-size: cover;
+    height: 223px;
+    width: 100%;
+    max-width: 1240px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.Banner_home_div_img_dark {
+    background-color: black;  
+    height: 223px;
+    width: 100%;
+    max-width: 1240px;
+    position: absolute;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    z-index: 2;
+}
