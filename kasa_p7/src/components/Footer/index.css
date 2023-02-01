@@ -5,9 +5,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
     height: 209px;
     max-width: 1440px;
+
+    background-color: black;
 }
 
 /* LOGO */
@@ -20,16 +21,11 @@
 
 .Footer-h1{
     position: absolute;
-
-    bottom: 10%;
-
+    bottom: 0%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-   
-    /* or 34px */
-
     display: flex;
     align-items: flex-end;
     text-align: center;

@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Header from "./components/Header"
 import Error from "./pages/Error"
+import Logement from "./pages/Logement"
 import Footer from "./components/Footer"
 import  './styles/GlobalStyle.css'
 
@@ -18,6 +19,9 @@ root.render(
            <Switch>
                 <Route exact path="/">
                     <Home />
+                </Route>
+                <Route path="/Logement/:id">
+                  <Logement/>
                 </Route>
                 <Route path="/About">
                     <About />
