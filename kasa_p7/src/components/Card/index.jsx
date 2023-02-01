@@ -5,7 +5,7 @@ function Card({id, title, cover}) {
 
   return (
 
-<ul className="Card_structure">
+<div className="Card_structure">
 
     <li className="Card_info" key={id}>
 
@@ -16,7 +16,7 @@ function Card({id, title, cover}) {
         
     </li>
 
-</ul>
+</div>
         
   )}
 
