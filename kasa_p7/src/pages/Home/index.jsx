@@ -8,6 +8,7 @@ function Home() {
 
   <div className="Home_div">
         <Banner />
+        <div className="Cards">
           {logementList.map ((logement, index) => (
             <Card
              key={`${logement.title}-${index}`}
@@ -22,6 +23,7 @@ function Home() {
              equipements={logement.equipements}
              />
             ))}
+      </div>     
   </div>
   )
 }

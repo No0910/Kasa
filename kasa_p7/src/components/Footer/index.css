@@ -19,18 +19,9 @@
 
 /* © 2020 Kasa. All rights reserved */
 
-.Footer-h1{
-    position: absolute;
-    bottom: 0%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-
-    color: #FFFFFF;
+.Footer-div .Footer-text{
+    color: white;
+    font-size: clamp(12px, 3vw, 24px);
 
 }
 

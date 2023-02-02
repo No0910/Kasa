@@ -1,22 +1,25 @@
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1240px;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+}
+
 .Card_structure {
     border-radius: 25px; 
-    background-color: #F7F7F7;
-    margin: 43px 100px;
-    padding: 35px 25px;
-    display: flex;
-    justify-content: space-between;
+    margin: 30px;
+    padding: 0;
 }
 
 
 .Card_info {
     position: relative;
-    display: flex;
-    
     list-style-type: none;
     width: 340px;
     height: 340px;
     border-radius: 10px;
-  
 }
 
   
