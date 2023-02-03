@@ -8,7 +8,7 @@ function Error() {
     return (
         <div className="Error_div">
             <img className="Logo_Error_404" src={Logo_Error} alt="Erreur 404"/>
-            <h1>Oups! La page que vous demandez n'existe pas.</h1>
+            <h1 className="Error_message">Oups! La page que vous demandez n'existe pas.</h1>
             <Link to="/">Retourner sur la page d'accueil</Link>
         </div>
     )
