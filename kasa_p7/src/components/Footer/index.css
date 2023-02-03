@@ -21,7 +21,6 @@
 
 .Footer-div .Footer-text{
     color: white;
-    font-size: clamp(12px, 3vw, 24px);
-
+    font-size: 24px;
 }
 
