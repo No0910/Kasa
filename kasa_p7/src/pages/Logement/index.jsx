@@ -1,8 +1,7 @@
 // Création de la page 'Logement'
 import "./index.css";
 import logements from "../../Datas/Logements.json"
-import Error from "../../pages/Error"
-import { useParams } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 //import Caroussel from "./components/Caroussel"
 
 
@@ -16,7 +15,7 @@ function Logement() {
     if (!idLogement) {
             return (
                 <> 
-                <Error message="Le logement n'existe pas." /> 
+                 <NavLink replace to="../../pages/Error"/> 
                 </>
             )
     } 
@@ -26,7 +25,7 @@ function Logement() {
     //const totalStars = 5;
     //const selectedStars = Number(logement.rating);
   
-    /*return ( 
+    return ( 
     <section className="Logement_section">
 
         <div className="div_logement">
@@ -55,7 +54,7 @@ function Logement() {
         </div>
     </section>
     
-    ) */
+    ) 
   
 
    

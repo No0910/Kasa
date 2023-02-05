@@ -21,6 +21,7 @@ function Home() {
              description={logement.description}
              tags={logement.tags}
              equipements={logement.equipements}
+             id={logement.id}
              />
             ))}
       </div>     
