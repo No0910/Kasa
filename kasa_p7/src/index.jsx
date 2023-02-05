@@ -11,6 +11,7 @@ import Footer from "./components/Footer"
 import  './styles/GlobalStyle.css'
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
       <React.StrictMode>
@@ -20,7 +21,7 @@ root.render(
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/Logement/:id">
+                <Route path="/Logement/:idLogement">
                   <Logement/>
                 </Route>
                 <Route path="/About">
