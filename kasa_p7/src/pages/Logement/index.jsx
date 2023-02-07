@@ -1,66 +1,82 @@
 // Création de la page 'Logement'
-import "./index.css";
-import logements from "../../Datas/Logements.json"
-import { NavLink, useParams } from "react-router-dom"
+import './index.css'
+import logements from '../../Datas/Logements.json'
+import { NavLink, useParams } from 'react-router-dom'
+import greyStar from '../../assets/star_grey.png';
+import redStar from '../../assets/star_red.png';
+
 //import Caroussel from "./components/Caroussel"
 
-
-
 function Logement() {
+  //
+  const { idLogement } = useParams()
 
-    //
-    const { idLogement } = useParams()
+  //
+  if (!idLogement) {
+    return (
+      <>
+        <NavLink replace to="../../pages/Error" />
+      </>
+    )
+  }
 
-    //
-    if (!idLogement) {
-            return (
-                <> 
-                 <NavLink replace to="../../pages/Error"/> 
-                </>
-            )
-    } 
+  const listingArray = logements.filter((el) => el.id === idLogement)
+  const logement = listingArray.shift()
+  //const totalStars = 5;
+  //const selectedStars = Number(logement.rating);
+  const ratingStars = logement.rating;
 
-    const listingArray = logements.filter(el => el.id === idLogement);
-    const logement = listingArray.shift();
-    //const totalStars = 5;
-    //const selectedStars = Number(logement.rating);
-  
-    return ( 
-    <section className="Logement_section">
+  return (
+    <main className="Logement_main">
+      <div className="div_logement">
+            <div className="logement_content">
 
-        <div className="div_logement">
-            <div className="logement_header">
-                <div className="div_logement_caroussel">
-                Mettre l'image ici + Flèches
-                </div>
-                <h1 className="logement_title"> {logement.title} </h1>
-                <h2 className="logement_location"> {logement.location} </h2>
-                <div className="div_logement_tags"> {logement.tags} </div>
-            </div>
+                    <div className="logement_content_infos">
+                        <h1 className="logement_title"> {logement.title} </h1>
+                        <p className="logement_location"> {logement.location} </p>
+                        <div className="logement_tag">
+                            {logement.tags.map((tag, index) => {
+                                return (
+                                    <button key={index}>{tag}</button>
+                                )
+                            })}
+                        </div> 
+                    </div> 
             
-            <div className="div_host_ratings">
-                <div className="logement_host"></div>
-                <div className="logement_ratings"></div>
+
+                    <div className="logement_content_host">
+                 
+                        <div className="logement_content_host_name">
+                            <p>{logement.host.name}</p>
+							<img src={logement.host.picture} alt="Hôte du logement" />
+						</div>
+
+                        <div className="logement_content_host_stars">
+							{[...Array(5)].map((star, index) => {
+								const ratingValue = index + 1;
+								return (
+									<img key={index} src={ratingValue <= ratingStars ? redStar : greyStar} alt="star" />
+								)
+							})}
+						</div>
+
+                    </div>   
             </div>
 
-            <div className="div_description_equipements">
-                <div className="logement_description">
-                    Mettre ici dropdown open
-                </div>
-                <div className="logement_equipements">
-                    Mettre ici dropdown open
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    ) 
-  
+                <div className="logement_collapse">
+					<div className="logement_collapse_description">
+                       {logement.description}
+                        Mettre ici menu déroulant composant Collapse 'description
+					</div>
+					<div className="logement_collapse_equipements">
+                       {logement.equipements}
+						Mettre ici menu déroulant composant Collapse 'équipements'
+					</div>	
+				</div>
+      </div>
+    </main>
 
-   
-   
+  )
 }
- 
-export default Logement 
 
-
+export default Logement
