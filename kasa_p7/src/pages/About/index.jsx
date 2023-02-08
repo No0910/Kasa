@@ -1,14 +1,15 @@
 import './index.css'
+import BannerAbout from "../../assets/BannerAbout.png"
+import Banner from "../../components/Banner/index"
 
 
 
 function About() {
     return (
         <main className="main-about">
-            <div className="About_div">
-                <div className="About_div_img"></div>
-                <div className="About_div_img_dark"></div>
-            </div>
+        <Banner
+        img = {BannerAbout}
+        title=""/>
        </main>
        
     )

@@ -69,16 +69,9 @@ function Logement() {
                   </div>   
             </div>
 
-                <div className="logement_collapse">
-					<div className="logement_collapse_description">
-                       {logement.description}
-                        Mettre ici menu déroulant composant Collapse 'description
-					</div>
-					<div className="logement_collapse_equipements">
-                       {logement.equipements}
-						Mettre ici menu déroulant composant Collapse 'équipements'
-					</div>	
-				</div>
+              
+               
+
       </div>
     </main>
 

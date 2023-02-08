@@ -1,13 +1,12 @@
 import "../../components/Banner/index.css";
 
 
-function Banner () {
+function Banner ({img, title}) {
     return (
-        <div className="Banner_home">
-            <div className="Banner_home_div">
-                <h1> Chez vous, partout et ailleurs </h1>
-                <div className="Banner_home_div_img"></div>
-                <div className="Banner_home_div_img_dark"></div>
+        <div className="Banner">
+            <div className="Banner_div">
+                <h1> {title} </h1>
+                <div className="Banner_div_img"><img src={img} alt={ title } title={ title } /></div>
             </div>
         </div>
     )

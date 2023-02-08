@@ -2,12 +2,15 @@ import Banner from "../../components/Banner/index";
 import Card from "../../components/Card/index"
 import "../../pages/Home/index.css"
 import logementList from "../../Datas/Logements.json"
+import BannerHome from "../../assets/BannerHome.png"
 
 function Home() {
   return ( 
 
   <div className="Home_div">
-        <Banner />
+        <Banner 
+        img = {BannerHome}
+        title = "Chez vous partout et ailleurs"/>
         <div className="Cards">
           {logementList.map ((logement, index) => (
             <Card
