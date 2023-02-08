@@ -37,8 +37,10 @@ function Logement() {
             <div className="logement_content">
 
                   <div className="logement_content_infos">
-                      <h1 className="logement_title"> {logement.title} </h1>
-                      <p className="logement_location"> {logement.location} </p>
+                      <div className="logement_content_title_location">
+                          <h1 className="logement_title"> {logement.title} </h1>
+                          <p className="logement_location"> {logement.location} </p>
+                      </div>
                       <div className="logement_tag">
                           {logement.tags.map((tag, index) => {
                               return (

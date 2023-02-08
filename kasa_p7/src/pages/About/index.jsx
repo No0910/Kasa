@@ -1,14 +1,14 @@
 import './index.css'
 
+
+
 function About() {
     return (
         <main className="main-about">
-            <article className='banner'>
-                
-            </article >
-        <div>
-        <h1>À Propos</h1>
-        </div>
+            <div className="About_div">
+                <div className="About_div_img"></div>
+                <div className="About_div_img_dark"></div>
+            </div>
        </main>
        
     )

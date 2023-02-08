@@ -2,7 +2,45 @@
 
 /* A Propos */
 
+.main-about{
+    display: flex;
+    justify-content: center;
+    margin: 43px 0;
+    position: relative;
+}
 
+
+.About_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    max-width: 1240px;
+    border-radius: 25px;
+} 
+
+.About_div_img {
+    background: url("../../assets/background_about.png");
+    background-size: cover;
+    height: 223px;
+    width: 100%;
+    max-width: 1240px;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.About_div_img_dark {
+    background: url("../../assets/background_dark-about.png");
+    height: 223px;
+    width: 100%;
+    max-width: 1240px;
+    position: absolute;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    border-radius: 25px;
+    z-index: 2;
+}
 
 
 
