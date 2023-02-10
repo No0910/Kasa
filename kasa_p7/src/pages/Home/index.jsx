@@ -10,7 +10,8 @@ function Home() {
   <div className="Home_div">
         <Banner 
         img = {BannerHome}
-        title = "Chez vous partout et ailleurs"/>
+        title = "Chez vous partout et ailleurs"
+        />
         <div className="Cards">
           {logementList.map ((logement, index) => (
             <Card

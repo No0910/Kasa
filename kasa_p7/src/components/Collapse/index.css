@@ -1,0 +1,30 @@
+
+.Collapse{
+    background-color: #F7F7F7;
+    max-width: 1100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 auto;
+}
+
+.Collapse button {
+    background-color: #FF6060;
+    color:#ffff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: clamp(13px, 2vw, 18px);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.Collapse button .arrow {
+    transition: all 0.2s ease-in-out;
+} 
+
+.Collapse button .arrow .arrow_up{
+    transform: rotate(0deg);
+}
+
+.Collapse button .arrow .arrow_down{
+    transform: rotate(180deg);
+}
