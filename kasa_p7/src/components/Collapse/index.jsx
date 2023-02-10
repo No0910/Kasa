@@ -16,9 +16,9 @@ const style = {
   }
 };
 
-function Collapse (props) {
+function Collapse ({title, content}) {
   
-  const [isVisible, setVisible] = useState(props.collapsed);
+  const [isVisible, setVisible] = useState(false);
 
   const toggleCollapse = () => {
     setVisible(!isVisible);
@@ -27,7 +27,7 @@ function Collapse (props) {
   return (
     <div className ="Collapse">
       <button style={style.buttonStyle} onClick={() => toggleCollapse(!isVisible)}>
-        {isVisible ? "Description" :"Équipements"} 
+        {title} 
         <img 
             className={isVisible ? "arrow arrow_up" : "arrow arrow_down"} 
             src={arrow} 
@@ -35,10 +35,14 @@ function Collapse (props) {
         />
       </button>
 
-      <div className={isVisible ? 'collapse_content' : 'collapse_content_hidden'}>
-                    
-      </div> 
-
+      <div className={isVisible ? "Collapse_Show_Content" : "Collapse_Hidden_Content"}>
+              {Array.isArray(content) ? content.map((item, index) => {
+                  return (
+                      <p key={index}>{item}</p>
+                  )
+              }) : content
+              }
+          </div> 
     </div>
   );
 }
