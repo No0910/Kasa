@@ -32,7 +32,7 @@ function Logement() {
   const description = logement.description;
 
   // Récupération des valeurs de l'item collapse 'Equipements'
-  const equipements = logement.equipements;
+  const equipments = logement.equipments;
 
   return (
     <main className="Logement_main">
@@ -76,18 +76,26 @@ function Logement() {
 
             </div>
 
-            <div className="logement_collapse">
+          <div className='logement_collapse'>
 
-                <div className="logement_collapse_item">
-                <Collapse title={'Description'} content={description} />
-                </div>
-
-                <div className="logement_collapse_item">
-                <Collapse title={'Équipements'} content={equipements}/>
-                </div>
-             
-              
+            <div className='collapse_container'>
+                <Collapse 
+                title= "Description"
+                content= {description}
+                />
             </div>
+
+            <div className='collapse_container'>
+                <Collapse 
+                title="Équipements"
+                content={
+                  <ul>{equipments.map((equipment) => 
+                    <li key={equipment}>{equipment}</li>)}
+                  </ul>}
+                />
+            </div>
+          
+        </div>
       </div>
     </main>
 

@@ -2,7 +2,6 @@ import "../../components/Collapse/index.css";
 import React, { useState } from "react";
 import arrow from '../../assets/arrow.png';
 
-
 const style = {
   collapsed: {
     display: "none"
@@ -26,27 +25,27 @@ function Collapse ({title, content}) {
 
   return (
     <div className ="Collapse">
-      <button style={style.buttonStyle} onClick={() => toggleCollapse(!isVisible)}>
-        {title} 
-        <img 
-            className={isVisible ? "arrow arrow_up" : "arrow arrow_down"} 
-            src={arrow} 
-            alt="show content" 
-        />
-      </button>
 
-      <div className={isVisible ? "Collapse_Show_Content" : "Collapse_Hidden_Content"}>
-              {Array.isArray(content) ? content.map((item, index) => {
-                  return (
-                      <p key={index}>{item}</p>
-                  )
-              }) : content
-              }
-          </div> 
+        <button className="Collapse_title" style={style.buttonStyle} onClick={() => toggleCollapse()}>
+          {title} 
+          <img 
+              className={isVisible ? "arrow arrow_up" : "arrow arrow_down"} 
+              src={arrow} 
+              alt="show content" 
+          />
+        </button>
+
+        <div className="Collapse_content" style={isVisible ? style.expanded : style.collapsed} aria-expanded={isVisible}>
+                {Array.isArray(content) ? content.map((item, index) => {
+                    return (
+                        <p key={index}>{item}</p>
+                    )
+                }) : content
+                }
+        </div> 
     </div>
+    
   );
 }
 
 export default Collapse;
-
-
