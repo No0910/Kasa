@@ -17,32 +17,31 @@ button.Collapse_title {
     padding: 10px 15px;
     cursor: pointer;
     border:none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img.arrow {
     transition: all 0.2s ease-in-out;
+    position: relative;
+    left:37%;
     width: 15.56px;
 }
 
 img.arrow.arrow_up{
     position: relative;
-    left: 37%;
     width: 22px;
-}
-
-img.arrow.arrow_up{
     transform: rotate(180deg);
 }
 
 img.arrow.arrow_down{
     position: relative;
-    left: 37%;
+    left:37%;
     width: 22px;
-}
-
-img.arrow_down{
     transform: rotate(0deg);
 }
+
 
 .Collapse_content{
         display: flex;
