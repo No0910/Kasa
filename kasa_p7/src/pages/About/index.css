@@ -2,7 +2,23 @@
 
 /* A Propos */
 
+.main-about {
+    background-color : white;
+    padding: 0px 6%;
+}
 
+.section_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    gap: 30px;
+}
+.collapse_about_container{
+    width: 85%;
+    font-size: 24px;
+}
 /******** Tablette *********/
 
 
