@@ -5,9 +5,7 @@ import { NavLink, useParams } from 'react-router-dom'
 import greyStar from '../../assets/star_grey.png';
 import redStar from '../../assets/star_red.png';
 import Collapse from '../../components/Collapse';
-//import Carrousel from '../../components/Carrousel';
-
-//import Caroussel from "./components/Caroussel"
+import Gallery from '../../components/Gallery';
 
 function Logement() {
   // Récupération des data logements avec useParams()
@@ -38,6 +36,10 @@ function Logement() {
   return (
     <main className="Logement_main">
       <div className="div_logement">
+
+        <Gallery 
+        items={logement.pictures}
+        />
 
 
             <div className="logement_content">
