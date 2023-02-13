@@ -12,7 +12,7 @@ button.Collapse_title {
     background-color: #FF6060;
     color:#ffff;
     border-radius: 10px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     padding: 10px 15px;
     cursor: pointer;
@@ -25,7 +25,6 @@ button.Collapse_title {
 img.arrow {
     transition: all 0.2s ease-in-out;
     position: relative;
-    left:37%;
     width: 15.56px;
 }
 
@@ -37,7 +36,6 @@ img.arrow.arrow_up{
 
 img.arrow.arrow_down{
     position: relative;
-    left:37%;
     width: 22px;
     transform: rotate(0deg);
 }
@@ -45,19 +43,21 @@ img.arrow.arrow_down{
 
 .Collapse_content{
         display: flex;
-        flex-direction: column;
-        gap: 5px;
-        letter-spacing: 1px;
+        align-items: center;
+        font-style: normal;
+        font-weight: 500;
         visibility: visible;
         opacity: 1;
+        border-radius: 10px;
         height: auto;
-        padding: 10px;
+        padding: 30px 15px 30px 20px;
         letter-spacing: 1px;
-        font-size: clamp(12px, 2vw, 16px);
+        font-size: clamp(12px, 2vw, 18px);
         color: #FF6060;
         transition: visibility 0.5s ease-in-out,
                     opacity 0.5s ease-in-out,
                     height 0.2s ease-in-out;
+        line-height: 26px;           
 }
 
 ul {

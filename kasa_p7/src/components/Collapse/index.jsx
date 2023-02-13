@@ -7,10 +7,8 @@ const style = {
     display: "none"
   },
   expanded: {
-    display: "block"
   },
   buttonStyle: {
-    display: "block",
     width: "100%"
   }
 };

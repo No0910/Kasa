@@ -4,12 +4,13 @@ import logements from '../../Datas/Logements.json'
 import { NavLink, useParams } from 'react-router-dom'
 import greyStar from '../../assets/star_grey.png';
 import redStar from '../../assets/star_red.png';
-import Collapse from '../../components/Collapse'
+import Collapse from '../../components/Collapse';
+//import Carrousel from '../../components/Carrousel';
 
 //import Caroussel from "./components/Caroussel"
 
 function Logement() {
-  //
+  // Récupération des data logements avec useParams()
   const { idLogement } = useParams()
 
   // Condition si l'id du logement ne correspond pas
@@ -37,6 +38,7 @@ function Logement() {
   return (
     <main className="Logement_main">
       <div className="div_logement">
+
 
             <div className="logement_content">
 
