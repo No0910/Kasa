@@ -29,3 +29,14 @@
     border-radius: 25px;
 }
 
+@media screen and (max-width: 550px){
+    .Banner {
+        margin: 20px 0;
+        position: relative;
+    }
+
+    .Banner_div_img{
+        background: url("../../assets/BannerHomeMobile.jpg");
+        background-size: cover;
+    }
+}

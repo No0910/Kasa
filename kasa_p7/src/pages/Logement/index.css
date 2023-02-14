@@ -100,3 +100,46 @@
 .collapse_container{
     width: 50%;
 }
+
+/**Mobile**/
+@media screen and (max-width: 550px){
+    .div_logement {
+        margin: 0px 10px;
+    }
+
+    .logement_content {
+        flex-direction: column;
+    }
+
+    .logement_content_infos h1 {
+        font-size: 25px;
+    }
+
+    .logement_content_host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .logement_collapse {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .collapse_container {
+        width: 100%;
+    }
+
+    .logement_content_host_stars {
+        height: 24px;
+        width: 24px;
+    }
+
+    .logement_content_host_name img {
+        height: 32px;
+        width: 32px;
+    }
+
+    
+    
+}
