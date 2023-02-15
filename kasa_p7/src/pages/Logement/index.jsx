@@ -1,7 +1,8 @@
 // Création de la page 'Logement'
 import './index.css'
 import logements from '../../Datas/Logements.json'
-import { NavLink, useParams } from 'react-router-dom'
+import Error from "../../pages/Error"
+import {useParams } from 'react-router-dom'
 import greyStar from '../../assets/star_grey.png';
 import redStar from '../../assets/star_red.png';
 import Collapse from '../../components/Collapse';
@@ -14,11 +15,21 @@ function Logement() {
   // Condition si l'id du logement ne correspond pas
   if (!idLogement) {
     return (
-      <>
-        <NavLink replace to="../../pages/Error" />
-      </>
+        <Error />
     )
   }
+
+  // Condition si l'id du logement ne correspond pas
+  let logementsIds = logements.reduce((acc, curVal) => acc.concat(curVal.id), []);
+
+  if(logementsIds.includes(idLogement) === false) {
+      return (
+        <> 
+          <Error /> 
+        </>
+      )
+    }
+
 
   // Récupération des logements avec la méthode filter() + la méthode shift()
   const listingArray = logements.filter((el) => el.id === idLogement)

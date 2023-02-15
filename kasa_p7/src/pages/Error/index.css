@@ -33,3 +33,11 @@
 .Error_div a:hover{
     text-decoration: underline;
 }
+
+/*Mobile*/
+@media screen and (max-width: 550px){
+    .Logo_Error_404 {
+        width:198px;
+        height:99px;
+    }
+}

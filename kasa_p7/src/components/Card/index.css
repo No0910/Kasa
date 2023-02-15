@@ -57,16 +57,16 @@
         width: 100%; 
     }    
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
     .Cards{
         height: 200px;
     }
 
-    .Card_info .Card_img {
+    .Card_info  {
         width: 335px;
-        height: 255px;
+        height: auto;
         position: relative;
-        top: 50%;
+        top: 0%;
     }
 
     .Card_info .Card_title {

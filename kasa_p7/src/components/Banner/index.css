@@ -11,6 +11,7 @@
     height: 223px;
     max-width: 1240px;
     border-radius: 25px;
+    position:relative;
 } 
 
 .Banner_div h1 {
@@ -32,11 +33,24 @@
 @media screen and (max-width: 550px){
     .Banner {
         margin: 20px 0;
-        position: relative;
+    }
+
+    .Banner_div {
+        height:0;
+        margin: 20px;
+    }
+
+    .Banner_div h1 {
+        font-size: clamp(18px, 5vw, 48px);
+        top: 5%;
+        left: 5%;
     }
 
     .Banner_div_img{
-        background: url("../../assets/BannerHomeMobile.jpg");
-        background-size: cover;
+        height: 0;
+    }
+
+    .Banner_div_img img{
+            width: 100%;
     }
 }
