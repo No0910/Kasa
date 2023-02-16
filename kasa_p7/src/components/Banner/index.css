@@ -30,6 +30,23 @@
     border-radius: 25px;
 }
 
+/*Tablette*/
+@media screen and (max-width:991px) {
+    
+    .Banner_div_img img{
+        width: 991px;
+    }
+
+    .Banner_div h1 {
+        font-size: clamp(24px, 5vw, 38px);
+        top: 31%;
+        left: 22%;
+    }
+    
+}
+
+
+/*Mobile*/
 @media screen and (max-width: 550px){
     .Banner {
         margin: 20px 0;

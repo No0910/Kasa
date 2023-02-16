@@ -44,9 +44,14 @@
     
 /***Tablette***/
 
-@media screen and (max-width: 900px){
+@media screen and (min-width: 550px) and (max-width:991px){ 
     .Header{
         height: 40px;
+    }
+
+    .Header_nav li {
+        font-size: 29px;
+        padding: 20px 50px;
     }
 }
 

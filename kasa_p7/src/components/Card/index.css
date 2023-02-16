@@ -52,11 +52,21 @@
     }
   
 }
-@media screen and (max-width: 900px){
+
+/*Tablette*/
+@media screen and (max-width:991px) {
     .Cards{
         width: 100%; 
     }    
+
+    .Card_info{
+        width: 420px;
+        height: 420px;
+    }
 }
+
+
+/*Mobile*/
 @media screen and (max-width: 550px){
     .Cards{
         height: auto;
