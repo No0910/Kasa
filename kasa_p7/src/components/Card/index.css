@@ -60,23 +60,26 @@
 @media screen and (max-width: 550px){
     .Cards{
         height: auto;
+        position: relative;
+        right: 0;
+        top: 74px;
+        background-color: transparent;
     }
 
-    .Card_info  {
-        width: 335px;
+    .Card_info{
+        width: 100%;
         height: auto;
-        position: relative;
-        top: 0%;
     }
+
 
     .Card_info .Card_title {
         left: 4.88%;
-        bottom: 57%;
+        bottom: 8%;
         justify-content: flex-start;
     }
 
     .Card_structure {
-        margin: 20px;
+            margin: 22px 20px 0 20px;
     }
 
     .Card_img {

@@ -24,6 +24,12 @@
 }
 
 @media screen and (max-width: 550px){
+
+    .Footer-div{
+        position: relative;
+        top: 92px;
+    }
+    
     .Footer-div .Footer-text{
         font-size: 12px;
     }
