@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 209px;
+    width: 100%;
     background-color: black;
 }
 
@@ -22,3 +23,8 @@
     font-size: 24px;
 }
 
+@media screen and (max-width: 550px){
+    .Footer-div .Footer-text{
+        font-size: 12px;
+    }
+}

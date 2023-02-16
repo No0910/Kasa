@@ -41,9 +41,12 @@
     }
 
     .Banner_div h1 {
-        font-size: clamp(18px, 5vw, 48px);
+        font-size: clamp(24px, 5vw, 4px);
         top: 5%;
         left: 5%;
+        max-width: 220px;
+        margin-top: 30px;
+        line-height: 1;
     }
 
     .Banner_div_img{
@@ -52,5 +55,7 @@
 
     .Banner_div_img img{
             width: 100%;
+            height: 111px;
+            border-radius: 10px;
     }
 }

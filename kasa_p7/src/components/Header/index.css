@@ -58,12 +58,13 @@
     }
 
     .Header_logo {
-        width: 124px;
+        width: 145px;
+        height: 47px;
         padding-top: 10px;
     }
 
     .Header_nav li {
-        padding: 30px 20px 16px 15px;
+        padding: 30px 0px 16px 15px;
         font-size: 15px;
         text-transform: uppercase;
     }
