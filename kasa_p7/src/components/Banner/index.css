@@ -45,6 +45,14 @@
     
 }
 
+@media screen and (max-width: 768px){
+    .Banner_div h1 {
+        font-size: clamp(24px, 5vw, 38px);
+        left: 28%;
+        justify-content: flex-start;
+    }
+}
+
 
 /*Mobile*/
 @media screen and (max-width: 550px){

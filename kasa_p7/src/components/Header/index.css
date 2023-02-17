@@ -55,6 +55,7 @@
     }
 }
 
+
 /***Mobile***/
 
 @media screen and (max-width: 550px){
@@ -70,7 +71,7 @@
 
     .Header_nav li {
         padding: 37px 0px 16px 15px;
-        font-size: 15px;
+        font-size: 12px;
         text-transform: uppercase;
     }
 

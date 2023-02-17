@@ -8,11 +8,7 @@
     border-radius: 25px;
     background-position: center;
     background-size: cover;
-    width: 95%;
     margin: 43px auto;
-    @media screen and (max-width: 650px){
-        height: 200px;  
-        margin: 20px auto;  }
   }
   
   
@@ -96,5 +92,14 @@ img.arrowGallery{
 
     .container-gallery {
         height: 240px;
+        width: 100%;
     }
+
+    img.arrowGallery{
+        width: 11.67px;
+        height: 19.8px;
+        position: absolute;
+        top: 59%;
+    }
+      
 }

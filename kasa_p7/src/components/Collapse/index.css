@@ -67,3 +67,9 @@ ul {
 }
 
 
+
+@media screen and (max-width: 550px){
+    button.Collapse_title {
+        font-size: 13px;
+    }
+}
