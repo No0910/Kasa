@@ -1,6 +1,7 @@
 /***Desktop***/
 .Header{
-    margin: 0 20px;
+    margin: 0 auto;
+    max-width: 1240px;
 }
 
 .Header_div {
@@ -9,8 +10,8 @@
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    font-weight: 500; 
-    margin: 40px;
+    font-weight: 500;
+    margin: 40px 0;
 }
 
 .Header_logo {

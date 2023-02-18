@@ -40,10 +40,10 @@
     left: 5.88%;
     right: 5.88%;
     top: 78.82%;
-    bottom: 5.88%;
+    bottom: 3.88%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
 }               
 
 
@@ -98,6 +98,7 @@
         left: 4.88%;
         bottom: 8%;
         justify-content: flex-start;
+        
     }
 
     .Card_structure {

@@ -1,5 +1,10 @@
+.Logement_main {
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
 .div_logement {
-    margin: 0px 40px;
+    margin: 0;
 }
 
 .logement_content {
@@ -7,6 +12,7 @@
     justify-content: space-between;
     margin: 0 auto;
 }
+
 
 .logement_content_infos{
     display: flex;
