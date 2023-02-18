@@ -61,7 +61,6 @@ img.arrowGallery{
 .gallery-arrows {
     position: absolute;
     height: 415px;
-    max-width: 1240px;
     margin: 0 auto;
     width: 100%;
     display: flex;

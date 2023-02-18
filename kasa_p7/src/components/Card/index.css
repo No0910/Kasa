@@ -5,6 +5,7 @@
     max-width: 1240px;
     background-color: #F7F7F7;
     margin: 0 auto;
+    border-radius: 25px 25px 0 0;
 }
 
 .Card_structure {

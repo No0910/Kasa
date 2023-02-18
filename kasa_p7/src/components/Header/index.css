@@ -10,8 +10,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 500; 
-    margin: 40px auto;
-    max-width: 1240px;
+    margin: 40px;
 }
 
 .Header_logo {
@@ -49,8 +48,12 @@
         height: 40px;
     }
 
+    .Header_logo{
+        width: 140px;
+    }
+
     .Header_nav li {
-        font-size: 29px;
+        font-size: 20px;
         padding: 20px 50px;
     }
 }

@@ -69,7 +69,29 @@ ul {
 
 
 @media screen and (max-width: 550px){
+
+    .Collapse{
+        position: relative;
+        top: 77px;
+    }
+
+
     button.Collapse_title {
         font-size: 13px;
+        border-radius: 5px;
     }
+
+    .collapse_about_container {
+        width: 95%;
+    }
+
+    img.arrow.arrow_up {
+        width: 15px;
+        height: auto;
+    }
+    img.arrow.arrow_down{
+        width: 15px;
+        height: auto;
+    }
+
 }
