@@ -10,7 +10,7 @@ const Gallery = ({ items }) => {
   useEffect(() => {
     // Automatisation du changement d'images: Toutes les 3 secondes
     const intervalId = setInterval(() => {
-      //Fonction setIndex, Quand on arrive à l'index de fin de tabeau, on recommence à 0, sinon on itère +1
+      //Fonction setIndex, Quand on arrive à l'index de fin de tableau, on recommence à 0, sinon on itère +1
       setIndex(index === items.length - 1 ? 0 : index + 1);
     }, 3000);
     return () => clearInterval(intervalId);
@@ -30,8 +30,9 @@ const Gallery = ({ items }) => {
     <div className='container-gallery'>
       <div className="gallery-item">
         <img className='img_gallery' src={items[index]} alt="" />
-        <div className="gallery-number">{index + 1}/{items.length}</div>
+        { items.length > 1 ? <div className="gallery-number">{index + 1}/{items.length}</div> : null } 
       </div>
+      { items.length > 1 ?
       <div className='gallery-arrows'>
         <div className='container-arrows'>
           <button className="gallery-button-back" onClick={handlePrev}><img className='arrowGallery' src={prevArrow} alt="prev arrow button" /></button>
@@ -39,7 +40,7 @@ const Gallery = ({ items }) => {
         <div className='container-arrows'>
           <button className="gallery-button-forward" onClick={handleNext}><img className='arrowGallery' src={nextArrow} alt="next arrow button" /></button>
         </div>
-      </div>
+      </div> : null }
     </div>
   );
 };
