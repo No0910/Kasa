@@ -44,12 +44,13 @@
     
 /***Tablette***/
 
-@media screen and (min-width: 550px) and (max-width:991px){ 
+@media screen and (max-width:991px){ 
+
     .Header_div{
-        margin: 0 20px;
+        margin: 20px;
     }
     .Header{
-        height: 40px;
+        height: auto;
     }
 
     .Header_logo{
