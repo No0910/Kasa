@@ -31,6 +31,10 @@
     border-radius: 10px;
 }
 
+.Card_img:hover{
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+}
+
 
 .Card_info .Card_title {
     font-size: 18px;
@@ -98,7 +102,7 @@
         left: 4.88%;
         bottom: 8%;
         justify-content: flex-start;
-        
+
     }
 
     .Card_structure {

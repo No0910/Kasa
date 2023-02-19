@@ -51,7 +51,6 @@
     border: none;
     color:#F7F7F7;
     background-color: #FF6060;
-
 }
 
 
@@ -107,50 +106,57 @@
 
 /**Mobile**/
 @media screen and (max-width: 550px){
+
     .div_logement {
-        margin: 0px 10px;
+        margin: 0px 20px;
     }
 
     .logement_content {
         flex-direction: column;
+        margin-top: 30px;
     }
 
-    
     .logement_content_infos {
-        margin: 0 10px;
+        margin: 0;
     }
-
 
     .logement_content_infos h1 {
         font-size: 18px;
     }
 
     .logement_content_infos p {
+        margin: 10px 0;
         font-size: 14px;
     }
 
     .logement_content_host {
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin: 0 10px;
+        margin: 0;
     }
 
     .logement_collapse {
         gap: 30px;
         flex-direction: column;
+        margin: 0;
     }
 
     .collapse_container {
         width: 100%;
     }
 
+    .logement_tag {
+        flex-wrap: nowrap;
+    }
+
     .logement_tag button {
         border-radius: 5px;
-
         font-size: 10px;
+        padding: 5px 10px;
     }
 
     .logement_content_host_stars {
+        margin-top: 30px;
         height: 15px;
         width: 15px;
     }

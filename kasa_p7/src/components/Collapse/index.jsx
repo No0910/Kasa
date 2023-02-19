@@ -22,7 +22,7 @@ function Collapse ({title, content}) {
   };
 
   return (
-    <div className ="Collapse">
+    <div className ="Collapse Collapse_about Collapse_logement">
 
         <button className="Collapse_title" style={style.buttonStyle} onClick={() => toggleCollapse()}>
           {title} 

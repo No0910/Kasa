@@ -71,6 +71,11 @@ img.arrowGallery{
 }
 
 @media screen and (max-width: 550px) {
+
+    .container-gallery {
+        margin: 15px auto;
+      }
+      
     .arrow {
         width: 20px;
         height: 12px;
@@ -78,6 +83,7 @@ img.arrowGallery{
 
     .img_gallery {
        height: 255px;
+       border-radius: 10px;
     }
 
     .gallery-number {

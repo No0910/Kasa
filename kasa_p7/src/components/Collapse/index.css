@@ -70,11 +70,15 @@ ul {
 
 @media screen and (max-width: 550px){
 
-    .Collapse{
+    .Collapse_logement {
         position: relative;
-        top: 77px;
+        top: 33px;
     }
-
+    
+    .Collapse_about{
+        position: relative;
+        top:77px
+    }
 
     button.Collapse_title {
         font-size: 13px;
