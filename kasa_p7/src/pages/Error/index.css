@@ -35,6 +35,19 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 991px){
+
+    .Error_div{
+        position: relative;
+        top: 80px;
+    }
+
+    img.Logo_Error_404{
+        width: 255px;
+        height: 120px;
+    }
+}
+
 /*Mobile*/
 @media screen and (max-width: 550px){
 

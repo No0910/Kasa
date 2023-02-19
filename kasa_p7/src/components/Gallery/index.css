@@ -70,6 +70,28 @@ img.arrowGallery{
     width: 100%;
 }
 
+/***Tablette***/
+
+@media screen and (max-width: 991px) {
+
+    img.arrowGallery{
+    width: 31.68px;
+    height: 52.2px;
+    } 
+}
+
+/***Tablette***/
+
+@media screen and (max-width: 768px) {
+
+    img.arrowGallery{
+    width: 31.68px;
+    height: 52.2px;
+    } 
+}
+
+/***Mobile***/
+
 @media screen and (max-width: 550px) {
 
     .container-gallery {

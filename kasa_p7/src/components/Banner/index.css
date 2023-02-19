@@ -28,7 +28,7 @@
     border-radius: 25px;
 }
 
-/*Tablette*/
+/***Tablette***/
 @media screen and (max-width:991px) {
     .Banner {
         margin: 0 0 20px 0;
@@ -67,7 +67,7 @@
 
     .Banner_div h1 {
         font-size: clamp(24px, 5vw, 29px);
-        top: 24%;
+        top: 37%;
         left: 22%;
         justify-content: flex-start;
     }

@@ -1,3 +1,5 @@
+/***Desktop***/
+
 /* Footer */
 
 .Footer-div{
@@ -23,6 +25,20 @@
     font-size: 24px;
 }
 
+/***Tablette***/
+@media screen and (max-width: 991px){
+
+    .Footer-div{
+        position: relative;
+        top: 165px;
+    }
+
+    .Footer-div .Footer-text{
+        font-size: 19px;
+    }
+}
+
+/***Mobile***/
 @media screen and (max-width: 550px){
 
     .Footer-div{

@@ -1,3 +1,5 @@
+/***Desktop***/
+
 .Logement_main {
     margin: 0 auto;
     max-width: 1240px;
@@ -102,6 +104,22 @@
 
 .collapse_container{
     width: 50%;
+}
+
+/***Tablette Grand Format***/
+@media screen and (max-width: 991px){
+
+    .div_logement {
+        margin: 0px 20px;
+    }
+}
+
+/***Tablette***/
+@media screen and (max-width: 768px){
+
+    .div_logement {
+        margin: 0px 20px;
+    }
 }
 
 /**Mobile**/
