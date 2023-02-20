@@ -1,12 +1,12 @@
 import "../../components/Banner/index.css";
 
 
-function Banner ({img, title}) {
+function Banner ({img, title, css}) {
     return (
         <div className="Banner">
             <div className="Banner_div">
                 <h1> {title} </h1>
-                <div className="Banner_div_img Banner_About"><img src={img} alt={ title } title={ title } /></div>
+                <div className={css}><img src={img} alt={ title } title={ title }/></div>
             </div>
         </div>
     )

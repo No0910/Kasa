@@ -27,8 +27,7 @@
     text-decoration: none;
     color:#FF6060;
     font-size: 14px;
-    position: relative;
-    top: 67px;
+    margin-top: 20px;
 }
 
 .Error_div a:hover{
@@ -36,11 +35,6 @@
 }
 
 @media screen and (max-width: 991px){
-
-    .Error_div{
-        position: relative;
-        top: 80px;
-    }
 
     img.Logo_Error_404{
         width: 255px;
@@ -64,10 +58,5 @@
         font-size:18px;
         line-height: 25px;
     }
-    
-    .Error_div a {
-        top: 128px;
-    }
-
 
 }

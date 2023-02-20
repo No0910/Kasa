@@ -73,11 +73,15 @@
     align-items: center;
 }
 
+.logement_content_host_firstname_lastname{
+    display: flex;
+    flex-direction: column;
+}
+
 .logement_content_host_name p {
     font-size: 18px;
     color: #FF6060;
     font-weight: 500;
-    max-width: 120px;
     text-align: right;
     margin: 0 10px 0 0;
 }
@@ -154,13 +158,14 @@
     }
 
     .logement_collapse {
-        gap: 30px;
+        gap: 0;
         flex-direction: column;
         margin: 0;
     }
 
     .collapse_container {
         width: 100%;
+        margin: 20px 0 0 0;
     }
 
     .logement_tag {

@@ -10,7 +10,7 @@ const Gallery = ({ items }) => {
   useEffect(() => {
     // Automatisation du changement d'images: Toutes les 3 secondes
     const intervalId = setInterval(() => {
-      //Fonction setIndex, Quand on arrive à l'index de fin de tableau, on recommence à 0, sinon on itère +1
+    //Fonction setIndex, Quand on arrive à l'index de fin de tableau, on recommence à 0, sinon on itère +1
       setIndex(index === items.length - 1 ? 0 : index + 1);
     }, 3000);
     return () => clearInterval(intervalId);

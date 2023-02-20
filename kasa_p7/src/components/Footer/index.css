@@ -10,6 +10,7 @@
     height: 209px;
     width: 100%;
     background-color: black;
+    margin-top:20px;
 }
 
 /* LOGO */
@@ -28,11 +29,6 @@
 /***Tablette***/
 @media screen and (max-width: 991px){
 
-    .Footer-div{
-        position: relative;
-        top: 165px;
-    }
-
     .Footer-div .Footer-text{
         font-size: 19px;
     }
@@ -40,13 +36,8 @@
 
 /***Mobile***/
 @media screen and (max-width: 550px){
-
-    .Footer-div{
-        position: relative;
-        top: 128px;
-    }
-    
     .Footer-div .Footer-text{
         font-size: 12px;
     }
+
 }

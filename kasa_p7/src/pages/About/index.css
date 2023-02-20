@@ -32,12 +32,10 @@
         width:100%;
     }
 
-    .section_about {
-        margin: 0 10px;
-    }
-
-    .collapse_about{
-        margin: 20px auto;
+    .about_collapse {
+        gap: 0;
+        flex-direction: column;
+        margin: 20px 20px 0 20px;
     }
 
 }

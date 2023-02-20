@@ -11,6 +11,7 @@ function Home() {
         <Banner 
         img = {BannerHome}
         title = "Chez vous, partout et ailleurs"
+        css="Banner_div_img little_banner"
         />
         <div className="Cards">
           {logementList.map ((logement, index) => (

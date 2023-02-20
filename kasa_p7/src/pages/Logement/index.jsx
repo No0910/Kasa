@@ -44,6 +44,9 @@ function Logement() {
   // Récupération des valeurs de l'item collapse 'Equipements'
   const equipments = logement.equipments;
 
+  // Récupération des noms et prénoms des hôtes
+  const [firstname, lastname] = logement.host.name.split(' ');
+
   return (
     <main className="Logement_main">
       <div className="div_logement">
@@ -75,7 +78,11 @@ function Logement() {
                   <div className="logement_content_host">
                 
                       <div className="logement_content_host_name">
-                          <p>{logement.host.name}</p>
+                         <div className="logement_content_host_firstname_lastname">
+                           <p> { firstname } </p>
+                           <p> { lastname } </p>
+                         </div>
+
                           <img src={logement.host.picture} alt="Hôte du logement"/>
                       </div>
 
@@ -110,7 +117,7 @@ function Logement() {
                 />
             </div>
           
-        </div>
+          </div>
       </div>
     </main>
 
