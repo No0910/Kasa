@@ -1,3 +1,5 @@
+/***Desktop***/
+
 .Error_div {
     display:flex;
     flex-direction: column;
@@ -34,6 +36,7 @@
     text-decoration: underline;
 }
 
+/***Tablette***/
 @media screen and (max-width: 991px){
 
     img.Logo_Error_404{
@@ -42,7 +45,7 @@
     }
 }
 
-/*Mobile*/
+/***Mobile***/
 @media screen and (max-width: 550px){
 
     .Error_div{

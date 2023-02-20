@@ -1,4 +1,4 @@
-/********** Desktop ************/
+/***Desktop***/
 
 /* A Propos */
 
@@ -6,25 +6,27 @@
     background-color : white;
 }
 
-.section_about {
+.about_collapse {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin: 40px;
-    gap: 30px;
+    gap: 0;
+    flex-direction: column;
+    margin: 20px 20px 0 20px;
 }
-.collapse_about_container{
+
+.about_collapse .collapse_container{
     width: 85%;
     font-size: 24px;
 }
-/******** Tablette *********/
+
+/***Tablette***/
 @media screen and (max-width: 991px){
     .collapse_about{
         margin: 20px auto;
     }
 }
 
-/*********** Mobile ***********/
+/***Mobile***/
 
 @media screen and (max-width: 550px){
 
@@ -35,7 +37,7 @@
     .about_collapse {
         gap: 0;
         flex-direction: column;
-        margin: 20px 20px 0 20px;
+        margin: 0;
     }
 
 }
