@@ -69,17 +69,7 @@ ul {
 
 
 @media screen and (max-width: 550px){
-
-    .Collapse_logement {
-        position: relative;
-        top: 33px;
-    }
     
-    .Collapse_about{
-        position: relative;
-        top:77px
-    }
-
     button.Collapse_title {
         font-size: 13px;
         border-radius: 5px;
