@@ -5,7 +5,7 @@
 
 7ème projet de la formation de développeur web d'OpenClassroom.
 
-## image
+![Screenshot-Kasa](https://github.com/No0910/Kasa/assets/98163578/752330d8-2810-4445-831a-6d8abad9f1cc)
 
 ## Enjeux
 ---
@@ -67,15 +67,18 @@ renseignées.
 
 ## Identité graphique
 ---
-### Polices de caractères : ---
+### Polices de caractères : 
+---
 - Logo et titres: Montserrat
 - Texte: Montserrat
 
-### Couleurs utilisées : ---
+### Couleurs utilisées : 
+---
 - Background-color : #FF6060
 - color : #FFFFFF
 
-### Compatibilité : ---
+### Compatibilité : 
+---
 - Développement en mobile-first à partir des maquettes fournies
 - Adapatation tablette et desktop libre (supports non prioritaires)
 - Responsive design intégré sur tout supports
