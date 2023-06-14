@@ -93,3 +93,6 @@ Sinon, vous pouvez cloner le projet
 ```terminal
 git clone https://github.com/No0910/Kasa.git
 ```
+## Auteur
+---
+Nolwenn Duhamel
