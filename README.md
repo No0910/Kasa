@@ -30,13 +30,13 @@ Maquette Figma [ici](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-U
 
 ### React :
 ---
-● Découpage en composants modulaires et réutilisables 
-● Un composant par fichier
-● Structure logique des différents fichiers 
-● Utilisation des props entre les composants 
-● Utilisation du state dans les composants quand c'est nécessaire 
-● Gestion des événements 
-● Listes : React permet de faire des choses vraiment intéressantes avec
+- Découpage en composants modulaires et réutilisables 
+- Un composant par fichier
+- Structure logique des différents fichiers 
+- Utilisation des props entre les composants 
+- Utilisation du state dans les composants quand c'est nécessaire 
+- Gestion des événements 
+- Listes : React permet de faire des choses vraiment intéressantes avec
 les listes, en itérant dessus, par exemple avec map. Il faut les utiliser
 autant que possible.
 
